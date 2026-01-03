@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Management App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Management</h1>
+
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <button id="toggleView">Card View</button>
+        <button id="addProductBtn">+ Add Product</button>
+      </div>
+
+      <div id="productList"></div>
+      <div id="pagination"></div>
+    </div>
+
+    <div class="modal hidden" id="productModal">
+      <div class="modal-content">
+        <h2 id="modalTitle">Add Product</h2>
+        <form id="productForm">
+          <input type="hidden" id="productId" />
+          <label>Name* <input type="text" id="name" /></label>
+          <label>Price* <input type="number" id="price" /></label>
+          <label>Category* <input type="text" id="category" /></label>
+          <label>Stock <input type="number" id="stock" /></label>
+          <label>Description <textarea id="description"></textarea></label>
+          <div class="error" id="formError"></div>
+          <div class="actions">
+            <button type="submit">Save</button>
+            <button type="button" id="closeModal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
