@@ -1,6 +1,6 @@
-# 🛒 Product Management Application
+# 🛒 Product Management Webpage
 
-A simple and responsive **Product Management Application** built using **HTML, CSS, and JavaScript**.  
+A simple and responsive **Product Management Webpage** built using **HTML, CSS, and JavaScript**.  
 This project demonstrates core frontend concepts like CRUD operations, search with debounce, pagination, and responsive UI — all without using a backend.
 
 ---
